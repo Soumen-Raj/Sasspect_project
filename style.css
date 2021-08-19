@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right,#03a9f4b0, #ee82eec9);
+    font-family: 'IBM Plex Sans', sans-serif;
+    
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 66px 227px;
+    background-color: #fff;
+    border-radius: 24px;
+    height: 584px;
+    width: 68%;
+}
+.signup_content{
+    display: flex;
+}
+.signup_image img{
+    background-color: #64a2a452;
+    margin: 44px;
+    border-radius: 24px;
+}
+.signup_form{
+    margin-top: 22px;
+    margin-left: 56px;
+}
+.signup_form h2{
+    padding-left: 66px;
+}
+
+.form_group input{
+    width: 80%;
+    background-color: #dae5ef;
+    height: 29px;
+    border: none;
+    outline-color: #03a9f4;
+}
+.form_group{
+    margin-top: 11px;
+}
+.form_group .input_feild{
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+.form_button{
+    margin-top: 25px;
+    
+}
+.form_button button{
+    width: 36%;
+    height: 27px;
+    background-color: #3da0ef;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    margin-left: 75px;
+    cursor: pointer;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+    color: #00000094;
+    
+}
+.contact_line{
+    border: 0.5px solid #00000047;
+    width: 80px;
+    height: 0px;
+    margin: 0 10px;
+}
+.contact_images{
+    margin-top: 40px;
+}
+.contact_images img{
+    width: 9%;
+    margin-left: 26px;
+}
+.login_ref{
+    display: flex;
+    margin-top: 55px;
+}
+.login_ref a{
+    margin-left: 77px;
+}
+.eye{
+    width: 18px;
+    position: absolute;
+    right: 22%;
+    top: 43%;
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        height: 43vh !important;
+        width: 95vw !important;
+        margin: 0 !important;
+    }
+    .signup{
+        display: grid;
+        place-items: center;
+        margin-top: 35%;
+    }
+    .signup_image img{
+        margin: 55px 24px !important;
+    }
+  }
+@media screen and (max-width: 380px) {
+    .signup_image{
+        display: none !important;
+    }
+    .container{
+        height: 75vh !important;
+    }
+    .signup_form h2{
+        padding-left: 90px;
+    }
+    .signup_form{
+        margin-left: 38px;
+    }
+    .contact_line{
+        width: 48px;
+    }
+   .register_form{
+    width: 96vw;
+   }
+}
